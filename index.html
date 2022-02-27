@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food delevery services in india|ordermealhere.com</title>
+    <!-- <link rel="stylesheet" href="project2.css"> -->
+    <link rel="stylesheet" media="screen and (max-width:1089px)" href="phone.css">
+</head>
+<style>
+    /* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* logo and image */
+#logo{
+margin: 3px 20px;
+}
+#logo img{
+    border: 2px solid red;
+    border-radius: 200px;
+height: 80px;
+width: 80px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: #fff;
+    
+}
+.btn{
+
+    color: rgb(199, 235, 127);
+    margin: 50px;
+    padding: 15px 30px;
+    border: 5px solid rgb(208, 238, 147);
+    border-radius: 40px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: black;
+    box-shadow: 0px 0px 40px 4px rgb(197, 233, 125);
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(199, 235, 127) ;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    /* background-color:black; */
+    background: url('../foodbg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.9;
+}
+.h-primary{
+    font-size:2.7rem;
+    padding: 12px;
+
+}
+#home h1{
+    color:red;
+    text-shadow: 20px 20px 80px black;
+     padding: 12px;
+    /* box-shadow: 0px 0px 40px 4px black; */
+    opacity: 1000;
+}
+#home p{
+    color:red;
+    /* text-shadow: 20px 20px 80px black; */
+    padding: 12px;
+    font-size: 1.6rem;
+    opacity: 100000;
+    /* box-shadow: 0px 0px 40px 4px black; */
+}
+/* services section */
+.h-secondary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size:2.7rem;
+    padding: 12px;
+    color: white;
+ }
+ #services1{
+     margin: 34px;
+     display: flex;
+     /* flex-wrap: wrap; */
+     /* flex-direction: column; */
+     color: white;
+    }
+    #services2{
+        margin: 34px;
+        display: flex;
+        /* flex-wrap: wrap; */
+    flex-direction: row;
+    color: white;
+}
+ .box{
+     border: 2px solid red;
+     border-radius: 14px;
+     margin: 2px 2px;
+     padding: 4px 4px;
+ }
+ .box img{
+     height: 156px;
+     margin: auto;
+     display: block;
+ }
+ .sevices-container{
+     background-color: black;
+     /* height: 00px; */
+ }
+ .meet img{
+     width: 40%;
+     height: 200px;
+ }
+ .meet h2{
+     color:black;
+     opacity: 0.9;
+ }
+ .meet h3{
+    color:black;
+    opacity: 0.9;
+}
+ .meetbox{
+     height: 100%;
+     text-align: center;
+     justify-content: center;
+     background:url('imgstorage/foodbg1.jpg');
+     opacity: 0.6;
+ }
+ .contact img{
+    width: 100%;
+    height: 100px;
+ }
+.contactbox{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}.box p{
+    text-align: center;
+}
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="imgstorage/foodlogo.jpg" alt="ordermealhere.com">
+        </div>
+        <ul>
+            <li class="item1"><a href="a">HOME</a></li>
+            <li class="item2"><a href="a">SERVICES</a></li>
+            <li class="item3"><a href="a">ABOUT US</a></li>
+            <li class="item4"><a href="a">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">welcome to ordermealhere</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic eius, dolore in .</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <!-- <button class="btn">ORDER NOW</button> -->
+    </section>
+    <section class="sevices-container">
+        <h1 class="h-secondary">OUR SERVICES</h1>
+        <div id="services1">
+            <div class="box">
+                <img src="imgstorage/item1.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order your sandvich</h2>
+                <p>offer pack rs:-70/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            <div class="box">
+                <img src="imgstorage/item2.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order your burger</h2>
+                <p>offer pack rs:-60/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            <div class="box">
+                <img src="imgstorage/item3.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order cup of soup</h2>
+                <p>offer pack rs:-125/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            <div class="box">
+                <img src="imgstorage/item4.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order pizza and drink</h2>
+                <p>offer pack rs:-170/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            
+        </div>
+        <div id="services2">
+            <div class="box">
+                <img src="imgstorage/item5.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order soft drink</h2>
+                <p>offer pack rs:-370/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            <div class="box">
+                <img src="imgstorage/item6.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order burger and fingers</h2>
+                <p>offer pack rs:-140/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            <div class="box">
+                <img src="imgstorage/item7.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">order your ready fruits</h2>
+                <p>offer pack rs:-70/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+            <div class="box">
+                <img src="imgstorage/item8.jpg" alt="NOT AVAILABLE">
+                <h2 class="h-secondary center">make your shama nasheela</h2>
+                <p>offer pack rs:-573/-only.</p>
+                <button class="btn">ORDER NOW</button>
+            </div>
+        </div>
+        </div>
+        <div class="meet">
+            <div class="meetbox">
+                <h2>NICE TO MEET YOU</h2>
+                <img src="imgstorage/nice to meet you.jpg" alt="NOT AVAILABLE">
+                <h3>THANK YOU FOR VISITING HERE</h3>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contactbox">
+                <img src="imgstorage/contact.jpg" alt="NOT AVAILABLE">
+                <h3>Mob.-9621359631,7880543546</h3>
+                <h3>gmail:-saumyakesarvani6475@gmail.com</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy;www.ordermealhere.com.all rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
